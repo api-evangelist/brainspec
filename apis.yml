@@ -1,7 +1,26 @@
 aid: brainspec
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brainspec.png
 name: Brainspec
-description: Brainspec is a company surfaced as a portfolio company of dcvc, techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BrainSpec is a medical software company whose FDA-cleared, cloud-based platform BrainSpec Core
+  makes MR spectroscopy (MRS) accessible to clinicians and researchers, turning standard MRI scanners
+  into a non-invasive "virtual biopsy" that measures brain-chemistry metabolite concentrations. The
+  web application ingests MRS data in DICOM, RDA, TWIX, SDAT and G-file formats across GE, Siemens and
+  Philips 3T scanners, applies a linear-combination post-processing model, and interfaces directly with
+  hospital PACS to pull companion images and push screenshots and reports back. BrainSpec is backed by
+  DCVC and Techstars. As of this enrichment pass BrainSpec publishes no public developer API, OpenAPI
+  specification, SDK, or developer portal; integration is delivered as a managed clinical/PACS service.
 url: https://raw.githubusercontent.com/api-evangelist/brainspec/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Medical Imaging
+- Neuroimaging
+- MRI
+- MR Spectroscopy
+- Radiology
+- Clinical Software
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +51,12 @@ maintainers:
 common:
 - type: Website
   url: https://brainspecmed.com/
+- type: PrivacyPolicy
+  url: https://brainspecmed.com/privacy-policy/
+- type: About
+  url: https://brainspecmed.com/company/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
